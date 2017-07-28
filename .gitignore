@@ -2,3 +2,4 @@ cToMatlab
 outputImages
 *~
 *.jpg
+*.o

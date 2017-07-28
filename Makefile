@@ -3,15 +3,15 @@ INCS =
 LIBS = 
 
 
-DEFINCS = -I/usr/include -I/usr/include/opencv2
-DEFLIBS = -L/usr/lib 
-LINKLIBS = -lopencv_core -lopencv_highgui -lopencv_imgproc 
+DEFINCS = -I/usr/local/include/opencv -I/usr/local/include/opencv2 
+DEFLIBS = -L/usr/local/lib  
+LINKLIBS = -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_imgcodecs -lopencv_cvv -lopencv_videoio
 
 CPP  = g++
 CC   = gcc
 OBJ  = main.o cvcalibinit3.o 
 LINKOBJ  = main.o cvcalibinit3.o 
-BIN  = FindCorners.exe
+BIN  = FindCorners
 RM = rm -f
 
 
